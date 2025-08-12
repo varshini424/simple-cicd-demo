@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elegant Jewellery Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #faf8f5;
+      color: #333;
+    }
+    header {
+      background-color: #b9975b;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: #a3864e;
+      padding: 10px 40px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 20px;
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .product-image {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product-name {
+      font-size: 1.3em;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+    }
+    .product-desc {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 15px;
+      min-height: 45px;
+    }
+    .product-price {
+      font-weight: 700;
+      font-size: 1.1em;
+      color: #b9975b;
+    }
+    footer {
+      background-color: #b9975b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>Elegant Jewellery Store</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Necklaces</a>
+    <a href="#">Rings</a>
+    <a href="#">Bracelets</a>
+    <a href="#">Contact</a>
+  </nav>
+  
+  <section class="products">
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80"
+        alt="Gold Necklace"
+        class="product-image"
+      />
+      <h2 class="product-name">Gold Necklace</h2>
+      <p class="product-desc">Elegant 24k gold necklace with intricate craftsmanship.</p>
+      <p class="product-price">$1200</p>
+    </article>
+
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1531177073517-47dbfb3a3d22?auto=format&fit=crop&w=400&q=80"
+        alt="Diamond Ring"
+        class="product-image"
+      />
+      <h2 class="product-name">Diamond Ring</h2>
+      <p class="product-desc">Sparkling solitaire diamond ring set in platinum.</p>
+      <p class="product-price">$2500</p>
+    </article>
+
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=400&q=80"
+        alt="Silver Bracelet"
+        class="product-image"
+      />
+      <h2 class="product-name">Silver Bracelet</h2>
+      <p class="product-desc">Stylish sterling silver bracelet with a modern design.</p>
+      <p class="product-price">$350</p>
+    </article>
+
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1581391090460-c3b95b5b914f?auto=format&fit=crop&w=400&q=80"
+        alt="Pearl Earrings"
+        class="product-image"
+      />
+      <h2 class="product-name">Pearl Earrings</h2>
+      <p class="product-desc">Classic pearl earrings perfect for any occasion.</p>
+      <p class="product-price">$500</p>
+    </article>
+  </section>
+
+  <footer>
+    &copy; 2025 Elegant Jewellery Store. All rights reserved.
+  </footer>
+</body>
+</html>
